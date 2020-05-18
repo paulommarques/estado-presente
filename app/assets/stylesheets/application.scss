@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap/scss/bootstrap";
+
+/*CSS PAGES*/
+
+ @import "pages/home";
+
+/*CSS COMPONENTS*/
+
+ @import "components/navbar";
+ @import "components/menuhome";
+ @import "components/maincontent";
