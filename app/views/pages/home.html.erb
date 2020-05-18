@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Estado Presente Representações </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 
@@ -15,32 +16,58 @@
       <div class="navbar">
         <div class="navbrands">
           <ul class="navlist">
-            <a href="https://www.mustang.es/es/" id="mtngnavlogo">
-            <img src="assets/images/nav_mu_lg.png" alt="MTNG"/>
+            <a href="https://www.mustang.es/es/" >
+              <%= image_tag "nav_mu_lg.png", alt: "MTNG", id:"mtngnavlogo"%>
             </a>
-            <a href="">SIXTY SEVEN</a>
-            <a href="">MARIA MARE</a>
-            <a href="">TAKE ME</a>
-            <a href="">BIBI LOU</a>
+            <a href="https://www.sixtyseven.es/">
+              <%= image_tag "sixtysevenlogo.png", alt: "SIXTYSEVEN", id: "sixtysevenlogo" %>
+            </a>
+            <a href="https://www.mariamare.com/", id="mmarelogo">
+              <%= image_tag "mariamarelogo.png", alt: "MMARE", id: "mmarelogo" %>
+            </a>
+            <a href="https://www.takeme.es/" id="takemelogo">
+              <%= image_tag "takemelogo.jpg", alt: "TAKEME", id: "takemelogo" %>
+            <a href="http://www.bibilou.es/">
+              <%= image_tag "bibiloulogo", alt: "BIBIL", id: "bibilogo"%>
+            </a>
           </ul>
         </div>
         <div class="menulogin">
           <ul class="menulist">
-            <li id="listmenu"><a href="#">Registo</a></li>
-            <li id="listmenu"><a href="#">Log In</a></li>
-            <li id="listmenu"><span>Avatar</span></li>
+            <li id="listmenu">
+              <button type="button" class="btn btn-secondary">Registo</button>
+            </li>
+            <li id="listmenu">
+              <button type="button" class="btn btn-secondary">Log in</button>
+            </li>
+            <li id="listmenu">
+              <%= image_tag "2019lewagon.jpg", alt: "avatar", class: "avatar"%>
+              </li>
           </ul>
         </div>
       </div>
       <div class="menuhome">
         <div class="homelogo">
-          <img src="#" alt="LOGO EP Rep">
+          <%= image_tag "EPlogo.png", alt: "LOGO EP", id: "homelogo" %>
         </div>
         <div class="homeicons">
           <ul class="menuicons">
-          <li class="iconlist">Search icon</li>
-          <li class="iconlist">Fav icon</li>
-          <li class="iconlist">Maps icon</li>
+            <li class="iconlist">
+              <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+              </svg>
+            </li>
+            <li class="iconlist">
+              <svg class="bi bi-heart" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 01.176-.17C12.72-3.042 23.333 4.867 8 15z" clip-rule="evenodd"/>
+              </svg>
+            </li>
+            <li class="iconlist">
+              <svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+              </svg>
+            </li>
           </ul>
         </div>
       </div> 
@@ -54,11 +81,19 @@
       <p>box one content</p>
       </div>
     </div>
-    <footer>
-    This will be the footer divided in 3
-    </footer>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright">
+        This footer is to divide in 3
+      </div>
+    </div>
   </div>
-  
 </body>
 
 </html>
