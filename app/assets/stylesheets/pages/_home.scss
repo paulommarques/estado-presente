@@ -1,1 +1,17 @@
-// Specific CSS for your home-page
+// website maincontent css - below menu home
+.maincontent{
+  background-color: #ffff;
+}
+
+.maincontent {
+  width: 100%;
+  height: 100%;
+	max-width: 1024px; /* or whatever width you want */
+	margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
+}
+
+#picContent{
+  object-fit: cover;
+}

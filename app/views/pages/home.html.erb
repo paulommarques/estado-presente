@@ -50,6 +50,9 @@
         <div class="homelogo">
           <%= image_tag "EPlogo.png", alt: "LOGO EP", id: "homelogo" %>
         </div>
+          <div class="linebreakinfo">
+            <span>Informação sobre estações, etc</span>
+          </div>
         <div class="homeicons">
           <ul class="menuicons">
             <li class="iconlist">
@@ -72,25 +75,27 @@
         </div>
       </div> 
     </div>
-    <div class="linebreakinfo">
-      <span>informação sobre estações, etc</span>
-    </div>
     <div class="maincontent">
-      <div class="boxone">
-      <img src="assets/images/take_fall.jpg" alt="boxonepic"/>
-      <p>box one content</p>
+      <div class="content">
+        <div class="boxone">
+          <%= image_tag "take_fall.jpg", alt: "picone", class: "picContent"%>
+        </div>
       </div>
-    </div>
+    </div> 
     <div class="footer">
       <div class="footer-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <ul class="footer-list">
+          <li><p>Contactos:<p></li>
+          <li><i class="fas fa-phone-square fa-rotate-90"></i>- 963390050 / 960443799</i></li>
+          <li><i class="far fa-envelope"></i> - antoniommarquesunp@gmail.com</li>
+          <li><a href="https://www.facebook.com/estadopresenterep"><i class="fab fa-facebook-square"></i> - Estado Presente</a></li>
+        </ul>
       </div>
       <div class="footer-copyright">
-        This footer is to divide in 3
+        Copyright
+      </div>
+       <div class="footer-map">
+        <%= image_tag "maps.jpg", alt: "footermap", class: "footermap"%>
       </div>
     </div>
   </div>
