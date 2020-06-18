@@ -1,17 +1,33 @@
-// website maincontent css - below menu home
+
+.large-screen{
+  font-family:'Work Sans', sans-serif;
+  background-color: #ffff;
+}
+
 .maincontent{
   background-color: #ffff;
 }
 
 .maincontent {
-  width: 100%;
-  height: 100%;
-	max-width: 1024px; /* or whatever width you want */
+  max-width: 1024px;
+  max-height: 100%;
 	margin-right: auto;
   margin-left: auto;
   object-fit: cover;
 }
 
-#picContent{
+.content-image {
+  width: 100%;
+  height: 100%;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.img_content{
   object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 2px solid;
+  border-color:rgba(188, 188, 96, 0.25);
+  box-shadow:  5px 4px 6px -3px rgba(197, 197, 197, 0.5);
 }

@@ -1,0 +1,95 @@
+<div class="topbar">
+  <div class="navbar">
+    <div class="navbrands">
+
+      <ul class="navlist">
+        <a href="https://www.mustang.es/es/">
+          <%= image_tag "nav_mu_lg.png", alt: "MTNG", class:"mtngnavlogo"%>
+        </a> <a href="https://www.sixtyseven.es/">
+          <%= image_tag "sixtysevenlogo.png", alt: "SIXTYSEVEN", class:"sixtysevenlogo" %>
+        </a>
+        <a href="https://www.mariamare.com/">
+          <%= image_tag "mariamarelogo.png", alt: "MMARE", class: "mmarelogo" %>
+        </a>
+        <a href="https://www.takeme.es/">
+          <%= image_tag "takemelogo.jpg", alt: "TAKEME", class: "takemelogo" %>
+          <a href="http://www.bibilou.es/">
+            <%= image_tag "bibiloulogo", alt: "BIBILOGO", class: "bibilogo"%>
+          </a>
+      </ul>
+    </div>
+
+    <div class="menulogin">
+      <ul class="menulist">
+        <% if user_signed_in? %>
+        <li class="listmenu">
+          <%# <%= image_tag "2019lewagon.jpg", alt: "avatar", class: "avatar-bordered"%>
+          <%= image_tag "2019lewagon.jpg", class: "avatar-bordered", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <%= link_to "Action", "#", class: "dropdown-item" %>
+            <%= link_to "Another action", "#", class: "dropdown-item" %>
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </li>
+        <% else %>
+        <li class="listmenu">
+          <%= link_to new_user_registration_path do %>
+          <button type="button" class="btn btn-dark">Registo</button>
+          <% end %>
+        </li>
+        <li class="listmenu">
+          <%= link_to new_user_session_path do %>
+          <button type="button" class="btn btn-dark">Entrar</button>
+          <% end %>
+        </li>
+        <li class="listmenu">
+          <%= image_tag "2019lewagon.jpg", alt: "avatar", class: "avatar-bordered"%>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <div class="menuhome">
+    <div class="homelogo">
+      <%= link_to root_path do%>
+      <%= image_tag "EPlogo.png", alt: "LOGO EP", class: "logopic" %>
+      <% end %>
+    </div>
+
+    <div class="linebreakinfo">
+      <span>Quem Somos - Contactos c link em baixo - etc</span>
+    </div>
+
+    <div class="homeicons">
+      <ul class="menuicons">
+        <li class="iconlist">
+          <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+              clip-rule="evenodd" />
+            <path fill-rule="evenodd"
+              d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </li>
+        <li class="iconlist">
+          <svg class="bi bi-heart" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 01.176-.17C12.72-3.042 23.333 4.867 8 15z"
+              clip-rule="evenodd" />
+          </svg>
+        </li>
+        <li class="iconlist">
+          <svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd" />
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

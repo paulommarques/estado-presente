@@ -8,91 +8,45 @@
   <title>Estado Presente Representações </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
 </head>
 
 <body>
   <div class="large-screen">
-    <div class="topbar">
-      <div class="navbar">
-        <div class="navbrands">
-          <ul class="navlist">
-            <a href="https://www.mustang.es/es/" >
-              <%= image_tag "nav_mu_lg.png", alt: "MTNG", id:"mtngnavlogo"%>
-            </a>
-            <a href="https://www.sixtyseven.es/">
-              <%= image_tag "sixtysevenlogo.png", alt: "SIXTYSEVEN", id: "sixtysevenlogo" %>
-            </a>
-            <a href="https://www.mariamare.com/", id="mmarelogo">
-              <%= image_tag "mariamarelogo.png", alt: "MMARE", id: "mmarelogo" %>
-            </a>
-            <a href="https://www.takeme.es/" id="takemelogo">
-              <%= image_tag "takemelogo.jpg", alt: "TAKEME", id: "takemelogo" %>
-            <a href="http://www.bibilou.es/">
-              <%= image_tag "bibiloulogo", alt: "BIBIL", id: "bibilogo"%>
-            </a>
-          </ul>
-        </div>
-        <div class="menulogin">
-          <ul class="menulist">
-            <li id="listmenu">
-              <button type="button" class="btn btn-secondary">Registo</button>
-            </li>
-            <li id="listmenu">
-              <button type="button" class="btn btn-secondary">Log in</button>
-            </li>
-            <li id="listmenu">
-              <%= image_tag "2019lewagon.jpg", alt: "avatar", class: "avatar"%>
-              </li>
-          </ul>
-        </div>
-      </div>
-      <div class="menuhome">
-        <div class="homelogo">
-          <%= image_tag "EPlogo.png", alt: "LOGO EP", id: "homelogo" %>
-        </div>
-          <div class="linebreakinfo">
-            <span>Informação sobre estações, etc</span>
-          </div>
-        <div class="homeicons">
-          <ul class="menuicons">
-            <li class="iconlist">
-              <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
-                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
-              </svg>
-            </li>
-            <li class="iconlist">
-              <svg class="bi bi-heart" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 01.176-.17C12.72-3.042 23.333 4.867 8 15z" clip-rule="evenodd"/>
-              </svg>
-            </li>
-            <li class="iconlist">
-              <svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </div> 
-    </div>
+    
     <div class="maincontent">
       <div class="content">
-        <div class="boxone">
-          <%= image_tag "take_fall.jpg", alt: "picone", class: "picContent"%>
+        <div class="content-image">
+          <%= image_tag "67_pub.jpg", alt: "img_one", class: "img_content"%>
+        </div>
+        <div class="content-image">
+          <%= image_tag "mtng_pub.jpg", alt: "img_two", class: "img_content"%>
+        </div>
+        <div class="content-image">
+          <%= image_tag "take_fall.jpg", alt: "img_three", class: "img_content"%>
         </div>
       </div>
     </div> 
     <div class="footer">
-      <div class="footer-links">
-        <ul class="footer-list">
-          <li><p>Contactos:<p></li>
-          <li><i class="fas fa-phone-square fa-rotate-90"></i>- 963390050 / 960443799</i></li>
-          <li><i class="far fa-envelope"></i> - antoniommarquesunp@gmail.com</li>
-          <li><a href="https://www.facebook.com/estadopresenterep"><i class="fab fa-facebook-square"></i> - Estado Presente</a></li>
+      <div class="footer-copyright">
+        <ul class="copyright-list">
+          <li>Copyright</li>
+          <li>Information</li>
+          <li>About</li>
+          <li>Copyright</li>
         </ul>
       </div>
-      <div class="footer-copyright">
-        Copyright
+      <div class="footer-links">
+        <ul class="footer-list">
+          <li class="contacts">Contactos:</li>
+          <li class="contacts"><i class="fas fa-phone-square fa-rotate-90"></i></li>
+          <li class="contacts">963390050 / 960443799</li>
+          <li class="contacts"><i class="far fa-envelope"></i></li>
+          <li class="contacts">antoniommarquesunp@gmail.com</li>
+          <li class="contacts"><a href="https://www.facebook.com/estadopresenterep"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="contacts">Estado Presente</li>
+        </ul>
       </div>
        <div class="footer-map">
         <%= image_tag "maps.jpg", alt: "footermap", class: "footermap"%>

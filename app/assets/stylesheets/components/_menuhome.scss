@@ -1,52 +1,51 @@
 .menuhome {
   display: flex;
   justify-content: space-between;
-  border-style: solid;
+  border: 1.5px solid;
   margin-bottom: 1px;
   border-top-color:rgba(188, 188, 96, 0.25);
   border-bottom-color: rgba(188, 188, 96, 0.25);
   border-left: 0px;
   border-right: 0px;
-
+  align-items: center;
+  background-color: #F4F4F4;
 }
 
-#homelogo{
+.logopic{
   width: 100px;
+  margin-left: 20px;
 }
 
 .linebreakinfo{
+  font-family:'Fjalla One', sans-serif;
+}
+
+.homeicons{
+  display: flex;
+  width: 225px;
+  justify-content: space-around;
+  font-size: 25px
 
 }
 
 .menuicons{
-  display: flex;
-  width: 225px;
+  display: contents;
   justify-content: space-around;
-  margin-bottom: 0px;
-  padding-left: 0px;
   font-size: 25px
-
 }
 
 .iconlist{
   list-style: none ;
-  width: 20px;
 }
 
-#bi-search{
-  display: flex;
-  width: 225px;
-  justify-content: space-arpound;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  font-size: 25px
+.bi-search{
+
+}
+
+.bi-heart{
   
 }
 
-#bi-heart{
-  
-}
-
-#bi-geo-alt{
+.bi-geo-alt{
   
 }

@@ -1,6 +1,8 @@
+
+
 .navbar{
   justify-content: space-between;
-  background: white;
+  background-color: #ffff;
 }
 
 .navbar.navbar-collapse {
@@ -16,30 +18,33 @@
  margin-bottom: 0px; 
 }
 
-#mtngnavlogo{
+.mtngnavlogo{
   width:100px;
 }
 
-#sixtysevenlogo{
+.sixtysevenlogo{
   width:100px;
 }
 
-#mmarelogo{
+.mmarelogo{
   width:100px;
 } 
 
-#takemelogo{
+.takemelogo{
   width:65px;
+  padding-left: 5px;
 }
 
-#bibilogo{
+.bibilogo{
   width:60px;
+  padding-left: 15px;
 }
 
 .menulogin {
   display: flex;
   width: 225px;
   justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .menulist{
@@ -49,9 +54,14 @@
   align-items: inherit;
 }
 
-.btn-secondary{
+.listmenu{
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.btn-dark{
   background-color: #ffff;
   border-radius: 5px;
-  color: #595959;
+  color: #000000;
 }
 
